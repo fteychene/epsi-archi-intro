@@ -51,6 +51,7 @@ fun closeVote() {
     for ((index, counter) in counters) {
         if (counter > max) {
             result = index
+            max = counter
         }
     }
     if (result == -1) {
